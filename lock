@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# Get path where the script is located
+SCRIPTPATH="$(dirname "$0")"
+IMAGE="$SCRIPTPATH/background.png"
+
+# Parameters for color configuration
+PARAMS="--insidevercolor=00000000
+	--insidewrongcolor=00000000
+	--insidecolor=00000000
+	--ringvercolor=00000000
+	--ringwrongcolor=d00000ff
+	--ringcolor=00000000
+	--linecolor=00000000
+	--separatorcolor=00000000
+	--textcolor=00000000
+	--keyhlcolor=546bcfff
+	--bshlcolor=d00000ff
+	"
+
+# Execute i3lock
+i3lock $PARAMS -i $IMAGE
+
